@@ -47,6 +47,11 @@ div.SignIn {
 	margin-bottom: 50px;
 }
 
+.submitButton:hover {
+	cursor: pointer;
+	color: #63CEC2;
+}
+
 .formInput {
 	text-align: left;
 	color: #ccc;
@@ -59,7 +64,57 @@ div.SignIn {
 	color: #ccc;
 }
 
+.forgotPassword a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+.forgotPassword a:hover {
+	color: #63CEC2;
+	text-decoration: none;
+}
+
 /* Profile Box Styles */
+
+div.Profile {
+	background-color: rgba(67, 75, 89, 0.7);
+	max-width: 440px;
+	min-width: 370px;
+	margin: 0 auto;
+	border-radius: 5px;
+	padding: 30px 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.profileHeader {
+	color: #ccc;
+	font-weight: normal;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.welcome {
+	text-align: center;
+	color: #ccc;
+	font-size: 1.2em;
+}
+
+.profileImage {
+	width: 40%;
+	float: left;
+	margin-right: 40px;
+}
+
+.userInfo {
+	font-size: .8em;
+	text-align: left;
+	color: #ccc;
+	margin: 0;
+	padding: 0;
+}
+
 
 
 
