@@ -1,1 +1,0 @@
-git config sendpack.sideband false

@@ -2,19 +2,27 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 40px 10px;
   font-family: "Open Sans", sans-serif;
   background-color: #63CEC2;
+}
+
+/* Set block-level items to border-box and with zero padding and margin. */
+
+div, p, input {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 /* Sign In Box Styles */
 
 div.SignIn {
 	background-color: rgba(67, 75, 89, 0.7);
-	max-width: 440px;
-	min-width: 370px;
+	min-width: 320px;
+	max-width: 360px;
 	margin: 0 auto;
-	border-radius: 5px;
+	border-radius: 8px;
 	padding: 30px;
 	display: flex;
 	flex-direction: column;
@@ -57,6 +65,7 @@ div.SignIn {
 	color: #ccc;
 	background-color: #F7F8F9;
 	margin-bottom: 20px;
+	padding: 0 15px;
 }
 
 .forgotPassword {
@@ -78,11 +87,10 @@ div.SignIn {
 
 div.Profile {
 	background-color: rgba(67, 75, 89, 0.7);
-	max-width: 440px;
-	min-width: 370px;
+	width: 480px;
 	margin: 0 auto;
-	border-radius: 5px;
-	padding: 30px 10px;
+	border-radius: 8px;
+	padding: 30px 15px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -98,21 +106,45 @@ div.Profile {
 .welcome {
 	text-align: center;
 	color: #ccc;
-	font-size: 1.2em;
+	font-size: 1.1em;
+	margin-bottom: 40px;
 }
 
 .profileImage {
-	width: 40%;
+	width: 45%;
 	float: left;
+	border-radius: 5px;
 	margin-right: 40px;
 }
 
 .userInfo {
 	font-size: .8em;
+	line-height: 1.4em;
 	text-align: left;
 	color: #ccc;
-	margin: 0;
-	padding: 0;
+}
+
+.userInfo {
+	list-style: none;
+}
+
+.editProfile {
+	text-align: center;
+	color: #ccc;
+}
+
+.editProfile a {
+	color: #ccc;
+	text-decoration: none;
+}
+
+.editProfile a:hover {
+	color: #63CEC2;
+	text-decoration: none;
+}
+
+.profileInfo {
+	margin-bottom: 50px;
 }
 
 

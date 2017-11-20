@@ -16,7 +16,7 @@ class SignIn extends Component {
     	<h1 className="signInHeader">Sign In</h1>
         <form className="signInForm" onSubmit={this.handleSubmit.bind(this)}>
            <input type="text" className="formInput" id="username" value={this.state.username} onChange={this.handleUsernameChange.bind(this)} />
-           <input type="text" className="formInput" id="password" value={this.state.password} onChange={this.handlePasswordChange.bind(this)} />
+           <input type="password" className="formInput" id="password" value={this.state.password} onChange={this.handlePasswordChange.bind(this)} />
            <button className="submitButton" type="submit">Sign In</button>
            <p className="forgotPassword"><a href="http://www.grandcircus.co" target="_blank">Forgot your password?</a></p>
         </form>
