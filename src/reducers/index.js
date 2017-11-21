@@ -9,7 +9,8 @@ const tempUser = {
 };
 
 const INITIAL_STATE = {
-	loggedInUser: tempUser
+	loggedInUser: null,
+    loginResult: true
 }; 
   
 export default function (state = INITIAL_STATE, action) { 
@@ -25,10 +26,13 @@ export default function (state = INITIAL_STATE, action) {
 
 function loginSuccess(state, user) {
 	return Object.assign({}, state, {
-		  loggedInUser: user
+		  loggedInUser: user,
+          loginResult: true
 	});
 }
 
 function loginFailure(state) {
-	// Do some stuff that might back some HTML show up in the DOM claiming a login failure.
+    return Object.assign({}, state, {
+          loginResult: false
+    });
 }

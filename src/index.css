@@ -68,6 +68,16 @@ div.SignIn {
 	padding: 0 15px;
 }
 
+.hidden {
+	display: none;
+}
+
+.loginFailure {
+	text-align: center;
+	color: #F7F8F9;
+	font-weight: bold;
+}
+
 .forgotPassword {
 	text-align: center;
 	color: #ccc;

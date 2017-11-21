@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import SignIn from './SignIn';
 import Profile from './Profile';
 
@@ -6,14 +7,27 @@ import Profile from './Profile';
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-         <SignIn />
-         <Profile />
-      </div>
-    );
+  		if (this.props.loggedInUser === null) {
+  		  return (
+  		  	<div className="App">
+  		  		<SignIn />
+	  		</div>
+  		  );
+  		} else {
+  		  return (
+  		  	<div className="App">
+  		  		<Profile loggedInUser={this.props.loggedInUser}/>
+	  		</div>
+  		  );	
+  		}
   }
 }
 
-export default App;
+function mapStateToProps(state) {
+    return {
+        loggedInUser: state.loggedInUser,
+    };
+};
+
+export default connect(mapStateToProps)(App);
 

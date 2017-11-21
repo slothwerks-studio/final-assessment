@@ -11,7 +11,7 @@ export function login(username, password) {
        	}
    	};
 }
-        	
+
 function success(user) {
 	return {
 		type: "LOGIN_SUCCESS",
@@ -24,3 +24,5 @@ function failure() {
 		type: "LOGIN_FAILURE",
 	};
 }
+
+
